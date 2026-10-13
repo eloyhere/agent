@@ -1,0 +1,20 @@
+{
+  "场模型": {
+    "parameters": 284673,
+    "learning_rate": 0.003,
+    "steps": 7282,
+    "seconds": 240.00725759999477,
+    "ms_per_step": 32.95897522658538,
+    "peak_gb": 0.4377107620239258,
+    "bits_per_byte": 3.0528863717124968
+  },
+  "上一版 KernelAttention": {
+    "parameters": 234087,
+    "learning_rate": 0.003,
+    "steps": 412,
+    "seconds": 240.34451470000204,
+    "ms_per_step": 583.3604725728205,
+    "peak_gb": 2.64426851272583,
+    "bits_per_byte": 5.8781600253704855
+  }
+}

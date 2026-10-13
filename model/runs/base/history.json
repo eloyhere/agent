@@ -1,0 +1,20 @@
+[
+  {
+    "step": 1,
+    "train_loss": 16.9513,
+    "val_loss": 16.8394,
+    "perplexity": 20570333.52,
+    "bits_per_byte": 24.2941,
+    "seconds": 0.4,
+    "vram_gb": 0.13
+  },
+  {
+    "step": 2,
+    "train_loss": 16.6359,
+    "val_loss": 16.8106,
+    "perplexity": 19986943.44,
+    "bits_per_byte": 24.2526,
+    "seconds": 0.5,
+    "vram_gb": 0.14
+  }
+]

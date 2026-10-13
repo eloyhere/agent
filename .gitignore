@@ -29,3 +29,9 @@ data/
 *.njsproj
 *.sln
 *.sw?
+
+# 训练检查点与日志（可重跑产生）
+model/runs/**/*.pt
+model/runs/**/*.log
+__pycache__/
+*.pyc

@@ -1,0 +1,118 @@
+{
+  "seeds": {
+    "场模型": {
+      "runs": [
+        {
+          "parameters": 284673,
+          "steps": 3817,
+          "seconds": 120.00127759999305,
+          "peak_gb": 0.4376039505004883,
+          "bits_per_byte": 3.4756342815651093
+        },
+        {
+          "parameters": 284673,
+          "steps": 3972,
+          "seconds": 120.00424500000372,
+          "peak_gb": 0.4376039505004883,
+          "bits_per_byte": 3.4600284468388307
+        },
+        {
+          "parameters": 284673,
+          "steps": 3946,
+          "seconds": 120.00914449999982,
+          "peak_gb": 0.4376039505004883,
+          "bits_per_byte": 3.483533874675866
+        }
+      ],
+      "mean_bpb": 3.4730655343599355,
+      "stdev_bpb": 0.011961401719848087,
+      "mean_steps": 3911.6666666666665,
+      "mean_peak_gb": 0.4376039505004883
+    },
+    "上一版 KernelAttention": {
+      "runs": [
+        {
+          "parameters": 234087,
+          "steps": 220,
+          "seconds": 120.32018470000185,
+          "peak_gb": 2.6447415351867676,
+          "bits_per_byte": 6.250790449437336
+        },
+        {
+          "parameters": 234087,
+          "steps": 221,
+          "seconds": 120.45058379998954,
+          "peak_gb": 2.64426851272583,
+          "bits_per_byte": 6.4298226691590115
+        },
+        {
+          "parameters": 234087,
+          "steps": 230,
+          "seconds": 120.12995580000279,
+          "peak_gb": 2.64426851272583,
+          "bits_per_byte": 6.227666866080879
+        }
+      ],
+      "mean_bpb": 6.3027599948924085,
+      "stdev_bpb": 0.11064523225447329,
+      "mean_steps": 223.66666666666666,
+      "mean_peak_gb": 2.644426186879476
+    }
+  },
+  "ablation": [
+    {
+      "modes": 128,
+      "layers": 2,
+      "parameters": 68865,
+      "steps": 12500,
+      "seconds": 90.00991860000067,
+      "peak_gb": 0.0825042724609375,
+      "bits_per_byte": 3.0154145552663634
+    },
+    {
+      "modes": 128,
+      "layers": 4,
+      "parameters": 71169,
+      "steps": 7845,
+      "seconds": 90.00287840000237,
+      "peak_gb": 0.12338829040527344,
+      "bits_per_byte": 3.140933857224123
+    },
+    {
+      "modes": 256,
+      "layers": 2,
+      "parameters": 137729,
+      "steps": 9333,
+      "seconds": 90.00023469999724,
+      "peak_gb": 0.1457347869873047,
+      "bits_per_byte": 3.0662484992777888
+    },
+    {
+      "modes": 256,
+      "layers": 4,
+      "parameters": 142337,
+      "steps": 5380,
+      "seconds": 90.01040110000758,
+      "peak_gb": 0.22739219665527344,
+      "bits_per_byte": 3.272179579516336
+    },
+    {
+      "modes": 512,
+      "layers": 2,
+      "parameters": 275457,
+      "steps": 5191,
+      "seconds": 90.01580459999968,
+      "peak_gb": 0.2744588851928711,
+      "bits_per_byte": 3.287934437209588
+    },
+    {
+      "modes": 512,
+      "layers": 4,
+      "parameters": 284673,
+      "steps": 2950,
+      "seconds": 90.01947410000139,
+      "peak_gb": 0.4376039505004883,
+      "bits_per_byte": 3.702917738834541
+    }
+  ]
+}
