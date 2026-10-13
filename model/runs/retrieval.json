@@ -1,0 +1,64 @@
+{
+  "verdicts": {
+    "E0": true,
+    "E1": false,
+    "E2": false,
+    "E4": true
+  },
+  "noise_accuracy": 0.016666666666666666,
+  "chance": 0.0625,
+  "capacity": [
+    {
+      "count": 4,
+      "accuracy": 1.0,
+      "chance": 0.25
+    },
+    {
+      "count": 8,
+      "accuracy": 1.0,
+      "chance": 0.125
+    },
+    {
+      "count": 16,
+      "accuracy": 0.85,
+      "chance": 0.0625
+    },
+    {
+      "count": 32,
+      "accuracy": 0.85,
+      "chance": 0.03125
+    },
+    {
+      "count": 64,
+      "accuracy": 0.85,
+      "chance": 0.015625
+    }
+  ],
+  "noise_robustness": [
+    {
+      "corruption": 0.0,
+      "accuracy": 0.725
+    },
+    {
+      "corruption": 0.25,
+      "accuracy": 0.725
+    },
+    {
+      "corruption": 0.5,
+      "accuracy": 0.725
+    },
+    {
+      "corruption": 1.0,
+      "accuracy": 0.725
+    },
+    {
+      "corruption": 2.0,
+      "accuracy": 0.6
+    },
+    {
+      "corruption": 4.0,
+      "accuracy": 0.4
+    }
+  ],
+  "distinct_retrieved": 12
+}
