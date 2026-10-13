@@ -207,7 +207,7 @@ export interface AgentReply {
  */
 export class PeriodicityAgent {
     private readonly tokenizer: BpeTokenizer;
-    private readonly languageModel: LanguageModel;
+    private languageModel: LanguageModel;
     private state: AgentState;
     private readonly onWaveform: ((waveform: Waveform, tokens: readonly EncodedToken[]) => void) | null;
 
@@ -222,6 +222,20 @@ export class PeriodicityAgent {
             options.languageModel ??
             new TemplateLanguageModel((context) => String(context.text ?? ""));
         this.state = { turns: [], waveform: null, lastReport: null, language: "zh" };
+    }
+
+    /**
+     * 在运行期换掉语言层。
+     *
+     * 这是 `LanguageModel` 那道缝的用处所在：接上真实 LLM 时只调这一个方法，
+     * 意图识别、工具与对话状态全都不动。
+     */
+    public setLanguageModel(languageModel: LanguageModel): void {
+        this.languageModel = languageModel;
+    }
+
+    public getLanguageModelName(): string {
+        return this.languageModel.name;
     }
 
     public getState(): AgentState {
