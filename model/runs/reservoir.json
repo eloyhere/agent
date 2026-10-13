@@ -1,0 +1,95 @@
+{
+  "reservoir": [
+    {
+      "bits_per_byte": 7.5872471633567695,
+      "simulation_seconds": 7.324221999995643,
+      "fit_seconds": 0.21544640000502113,
+      "total_seconds": 7.539668400000664,
+      "feature_dim": 4096,
+      "readout_bytes": 4227072,
+      "field_bytes": 16384,
+      "cached_state_bytes": 327663616,
+      "train_tokens": 20000,
+      "modes": 1024,
+      "steps_per_token": 2,
+      "ridge": 0.01
+    },
+    {
+      "bits_per_byte": 9.650703951506593,
+      "simulation_seconds": 7.3108137999952305,
+      "fit_seconds": 0.46841900001163594,
+      "total_seconds": 7.7792328000068665,
+      "feature_dim": 8192,
+      "readout_bytes": 8454144,
+      "field_bytes": 32768,
+      "cached_state_bytes": 655327232,
+      "train_tokens": 20000,
+      "modes": 2048,
+      "steps_per_token": 2,
+      "ridge": 0.01
+    },
+    {
+      "bits_per_byte": 452.2271751893381,
+      "simulation_seconds": 7.187633600013214,
+      "fit_seconds": 1.9781500999961281,
+      "total_seconds": 9.165783700009342,
+      "feature_dim": 16384,
+      "readout_bytes": 16908288,
+      "field_bytes": 65536,
+      "cached_state_bytes": 1310654464,
+      "train_tokens": 20000,
+      "modes": 4096,
+      "steps_per_token": 2,
+      "ridge": 0.01
+    },
+    {
+      "bits_per_byte": 9.32435242495174,
+      "simulation_seconds": 13.498397399991518,
+      "fit_seconds": 0.46861080000235233,
+      "total_seconds": 13.96700819999387,
+      "feature_dim": 8192,
+      "readout_bytes": 8454144,
+      "field_bytes": 32768,
+      "cached_state_bytes": 655327232,
+      "train_tokens": 20000,
+      "modes": 2048,
+      "steps_per_token": 4,
+      "ridge": 0.01
+    },
+    {
+      "bits_per_byte": 9.5217995150319,
+      "simulation_seconds": 7.1357923000032315,
+      "fit_seconds": 0.4686667999922065,
+      "total_seconds": 7.604459099995438,
+      "feature_dim": 8192,
+      "readout_bytes": 8454144,
+      "field_bytes": 32768,
+      "cached_state_bytes": 655327232,
+      "train_tokens": 20000,
+      "modes": 2048,
+      "steps_per_token": 2,
+      "ridge": 0.1
+    }
+  ],
+  "backprop": {
+    "bits_per_byte": 5.828976770842042,
+    "parameters": 284673,
+    "steps": 239,
+    "seconds": 7.557550499986974,
+    "peak_gb": 0.4378981590270996
+  },
+  "best": {
+    "bits_per_byte": 7.5872471633567695,
+    "simulation_seconds": 7.324221999995643,
+    "fit_seconds": 0.21544640000502113,
+    "total_seconds": 7.539668400000664,
+    "feature_dim": 4096,
+    "readout_bytes": 4227072,
+    "field_bytes": 16384,
+    "cached_state_bytes": 327663616,
+    "train_tokens": 20000,
+    "modes": 1024,
+    "steps_per_token": 2,
+    "ridge": 0.01
+  }
+}

@@ -1,0 +1,116 @@
+{
+  "stats": [
+    {
+      "total_segments": 8763,
+      "distinct_segments": 8617,
+      "reused_segments": 127,
+      "reuse_fraction": 0.014492753623188406,
+      "mean_length": 22.823234052265207,
+      "max_length": 508,
+      "coverage": 1.0,
+      "min_match": 6
+    },
+    {
+      "total_segments": 8392,
+      "distinct_segments": 8162,
+      "reused_segments": 191,
+      "reuse_fraction": 0.022759771210676835,
+      "mean_length": 23.83222116301239,
+      "max_length": 508,
+      "coverage": 1.0,
+      "min_match": 8
+    },
+    {
+      "total_segments": 5941,
+      "distinct_segments": 5788,
+      "reused_segments": 116,
+      "reuse_fraction": 0.0195253324356169,
+      "mean_length": 33.664366268305,
+      "max_length": 483,
+      "coverage": 1.0,
+      "min_match": 12
+    },
+    {
+      "total_segments": 3869,
+      "distinct_segments": 3806,
+      "reused_segments": 52,
+      "reuse_fraction": 0.013440165417420522,
+      "mean_length": 51.69294391315585,
+      "max_length": 850,
+      "coverage": 1.0,
+      "min_match": 16
+    }
+  ],
+  "consistency": {
+    "probes_checked": 20,
+    "consistent": 11,
+    "inconsistent": 9,
+    "consistency_rate": 0.55,
+    "details": [
+      {
+        "probe": "\r\n\\end{proof}\r\n\r\n\\begin{",
+        "occurrences": 62,
+        "distinct_patterns": 2,
+        "sample": [
+          [
+            12
+          ],
+          [],
+          []
+        ]
+      },
+      {
+        "probe": ".\r\n\\end{proof}\r\n\r\n\\begin",
+        "occurrences": 58,
+        "distinct_patterns": 2,
+        "sample": [
+          [
+            13
+          ],
+          [],
+          []
+        ]
+      },
+      {
+        "probe": "\\begin{enumerate}[label=",
+        "occurrences": 48,
+        "distinct_patterns": 1,
+        "sample": [
+          [],
+          [],
+          []
+        ]
+      },
+      {
+        "probe": "begin{enumerate}[label=(",
+        "occurrences": 48,
+        "distinct_patterns": 1,
+        "sample": [
+          [],
+          [],
+          []
+        ]
+      },
+      {
+        "probe": "egin{enumerate}[label=(\\",
+        "occurrences": 48,
+        "distinct_patterns": 1,
+        "sample": [
+          [],
+          [],
+          []
+        ]
+      },
+      {
+        "probe": "gin{enumerate}[label=(\\r",
+        "occurrences": 48,
+        "distinct_patterns": 1,
+        "sample": [
+          [],
+          [],
+          []
+        ]
+      }
+    ]
+  }
+}

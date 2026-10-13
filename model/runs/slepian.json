@@ -1,0 +1,51 @@
+[
+  {
+    "n": 32,
+    "w": 0.05,
+    "theoretical": 3.2,
+    "measured": 3,
+    "ratio": 0.9375
+  },
+  {
+    "n": 64,
+    "w": 0.05,
+    "theoretical": 6.4,
+    "measured": 6,
+    "ratio": 0.9375
+  },
+  {
+    "n": 128,
+    "w": 0.05,
+    "theoretical": 12.8,
+    "measured": 13,
+    "ratio": 1.015625
+  },
+  {
+    "n": 128,
+    "w": 0.1,
+    "theoretical": 25.6,
+    "measured": 26,
+    "ratio": 1.015625
+  },
+  {
+    "n": 256,
+    "w": 0.05,
+    "theoretical": 25.6,
+    "measured": 26,
+    "ratio": 1.015625
+  },
+  {
+    "n": 256,
+    "w": 0.1,
+    "theoretical": 51.2,
+    "measured": 51,
+    "ratio": 0.99609375
+  },
+  {
+    "n": 512,
+    "w": 0.05,
+    "theoretical": 51.2,
+    "measured": 51,
+    "ratio": 0.99609375
+  }
+]
