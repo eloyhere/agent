@@ -189,19 +189,47 @@ export const periodicConvolve: (
             });
         }
     }
+
+    // 直流分量与周转圆相乘：常数只是缩放模、平移相位，**不改变频率**。
+    // 少了这两项，只要有一侧是纯直流（例如空白符那个 token），交叉乘积就是空的，
+    // 整段结果的周转圆会被全部抹掉 —— 而数学上乘一个常数不该改变频率构成。
+    const dcA: Complex = polynomialConstant(a);
+    const dcB: Complex = polynomialConstant(b);
+    const magnitudeA: number = dcA.magnitude();
+    const magnitudeB: number = dcB.magnitude();
+    if (magnitudeA > 0) {
+        const shift: number = dcA.argument();
+        for (const y of b.getEpicycles()) {
+            composed.push({
+                amplitude: y.getAmplitude() * magnitudeA,
+                omega: y.getOmega(),
+                phase: y.getPhase() + shift
+            });
+        }
+    }
+    if (magnitudeB > 0) {
+        const shift: number = dcB.argument();
+        for (const x of a.getEpicycles()) {
+            composed.push({
+                amplitude: x.getAmplitude() * magnitudeB,
+                omega: x.getOmega(),
+                phase: x.getPhase() + shift
+            });
+        }
+    }
     composed.sort((p, q) => Math.abs(q.amplitude) - Math.abs(p.amplitude));
 
     const epicycles: Epicycle[] = [];
     for (const item of composed.slice(0, keep)) {
+        if (Math.abs(item.amplitude) < 1e-15) {
+            continue;
+        }
         // 相似核可能为负，符号由 Epicycle 的构造函数折进相位
         epicycles.push(new Epicycle(item.amplitude, item.omega, item.phase));
     }
-    // 直流分量的复合
-    const constantA: Complex = polynomialConstant(a);
-    const constantB: Complex = polynomialConstant(b);
     return new Waveform({
         epicycles,
-        polynomial: [constantA.multiply(constantB)]
+        polynomial: [dcA.multiply(dcB)]
     });
 };
 
